@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2e003e;
+    color: #ffffff;
+  }
+  
+  .portfolio-container {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .portfolio-card, .stocks-card {
+    background-color: #421e6d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-summary h3 {
+    margin: 5px 0;
+  }
+  
+  .stock-details {
+    padding: 10px;
+    border-bottom: 1px solid #5c2b94;
+  }
+  
+  .stock-header {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .stock-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .stock-info div {
+    margin: 5px 0;
+  }
+  
+  .portfolio-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #673ab7;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #452a8e;
+  }
+  
+  .btn-secondary {
+    background-color: #757575;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5c5c5c;
+  }
+  

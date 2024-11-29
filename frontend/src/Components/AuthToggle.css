@@ -1,0 +1,134 @@
+/* Center the form and ensure responsive design */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper for form */
+.form-wrapper {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form header */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f0505;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f8f9fa;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.btn-auth {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-auth:hover {
+  opacity: 0.9;
+}
+
+button.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+button.google-btn:hover {
+  background-color: #c23321;
+}
+
+button.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+}
+
+button.facebook-btn:hover {
+  background-color: #31487b;
+}
+
+/* Divider */
+.divider {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ced4da;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Toggle link for sign-up/login */
+.toggle-link {
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover {
+  color: #0056b3;
+}
+
+
+.login-form h2{
+  color:black;
+}
+.login-form p{
+  color:black
+}
+.signup-form h2{
+  color:black;
+}
+.signup-form p{
+  color:black
+}

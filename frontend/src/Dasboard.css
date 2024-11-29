@@ -1,0 +1,25 @@
+.welcome-container {
+  text-align: center; /* Center-align text horizontally */
+  margin-bottom: 2rem; /* Add spacing below the welcome text */
+  position: relative; /* Keep it within the flow of the document */
+  top: 0; /* Ensure it's aligned properly at the top */
+  padding-top: 2rem; /* Add padding above the text */
+  z-index: 1; /* Ensure it stays above background but below other elements */
+}
+
+.welcome-container h1 {
+  font-size: 2.5rem; /* Adjust the size of the heading */
+  color: #fff; /* Set text color to white */
+}
+
+.welcome-container p {
+  font-size: 2.5rem; /* Adjust the size of the heading */
+  color: #fff; 
+  margin-top: 2.5rem;/* Set text color to white */
+}
+
+.welcome-container .center-text {
+  font-size: 1.2rem; /* Smaller text for the description */
+  color: #ccc; /* Light gray for secondary text */
+  margin-top: 0.5rem; /* Add spacing below the header */
+}

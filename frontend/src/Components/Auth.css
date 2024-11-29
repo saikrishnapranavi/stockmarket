@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Video */
+.background-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensure video is behind text */
+}
+
+/* Section Background */
+.auth-section {
+  background: #000;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Smoke Animation Text */
+h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  font-size: 5em;
+  font-family: sans-serif;
+  z-index: 1; /* Place above the video */
+  display: flex;
+  justify-content: center;
+}
+
+h1 span {
+  display: inline-block;
+  animation: animate 1s ease-in-out forwards;
+}
+
+@keyframes animate{
+  0%{
+      opacity: 0%;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+  }
+  100%{
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0px);
+}
+}
+h1 span:nth-child(1)
+{
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(2)
+{
+  animation-delay: 1s;
+}
+h1 span:nth-child(3)
+{
+  animation-delay: 1.7s;
+}
+h1 span:nth-child(4)
+{
+  animation-delay: 2.3s;
+}
+h1 span:nth-child(5)
+{
+  animation-delay: 2.7s;
+}
+h1 span:nth-child(6)
+{
+  animation-delay: 3.2s;
+}
+h1 span:nth-child(7)
+{
+  animation-delay: 3.7s;
+}
+h1 span:nth-child(8)
+{
+  animation-delay: 4s;
+}
+/* Auth Buttons */
+.auth-buttons {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.auth-btn {
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 4s; /* Matches the last animation delay */
+}
+
+.auth-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Fade-in Button Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

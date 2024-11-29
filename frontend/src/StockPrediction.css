@@ -1,0 +1,44 @@
+/* src/StockPrediction.css */
+
+.stock-prediction-container {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #2e003e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+  }
+  
+  .prediction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .prediction-card {
+    background-color: #421e6d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .prediction-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .prediction-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .prediction-card strong {
+    font-weight: bold;
+  }
+  
